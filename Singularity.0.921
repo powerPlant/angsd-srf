@@ -3,7 +3,7 @@ From: ubuntu:bionic
 
 %labels
 Maintainer eric.burgueno@plantandfood.co.nz
-Version 0.932
+Version 0.921
 
 %post
   ## Download build prerequisites
@@ -11,9 +11,9 @@ Version 0.932
   apt-get -y install g++ gcc libbz2-dev libcurl4 libcurl4-openssl-dev libhts2 libhts-dev libssl-dev libzip4 libzip-dev make wget
 
   cd /opt
-  wget https://github.com/ANGSD/angsd/archive/0.932.tar.gz
-  tar -xzf 0.932.tar.gz
-  cd angsd-0.932
+  wget https://github.com/ANGSD/angsd/archive/0.921.tar.gz
+  tar -xzf 0.921.tar.gz
+  cd angsd-0.921
   make
   make install
 

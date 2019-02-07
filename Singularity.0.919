@@ -15,7 +15,10 @@ Version 0.919
   tar -xzf 0.919.tar.gz
   cd angsd-0.919
   make
-  make install
+  install -dm0755 /usr/local/bin
+  install -Dm0755 angsd /usr/local/bin
+  cd misc
+  install -Dm0755 thetaStat realSFS /usr/local/bin
 
   ## Cleanup
   apt-get -y autoremove g++ gcc libcurl4-openssl-dev libhts-dev libssl-dev libzip-dev make wget
